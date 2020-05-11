@@ -1,1 +1,74 @@
 @import '~bootstrap/scss/bootstrap';
+
+$page-bg: #eee;
+$main-bg: #fff;
+$soft-border: #f9f9f9;
+$shade: #e5e5e5;
+$key-size: 40px;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $page-bg;
+  font: 75% / 1.5 sans-serif;
+}
+
+main {
+  margin: 100px auto;
+  width: 688px;
+}
+
+.screen {
+  background: $main-bg;
+  border: 1px solid $soft-border;
+  border-radius: 5px;
+  font: 1em/1.5 Verdana, Sans-Serif;
+  height: 200px;
+  margin: 0 0 5px;
+  padding: 5px;
+  width: 671px;
+}
+
+.keyboard {
+  list-style: none;
+  padding-left: 5px;
+
+  li {
+    background: $main-bg;
+    border: 1px solid $soft-border;
+    border-radius: 5px;
+    float: left;
+    height: $key-size;
+    line-height: 40px;
+    margin: 0 5px 5px 0;
+    text-align: center;
+    width: $key-size;
+
+    :hover {
+      border-color: $shade;
+      cursor: pointer;
+      position: relative;
+    }
+  }
+
+  .capslock,
+  .return {
+    width: $key-size + 40px;
+  }
+
+  .delete,
+  .tab {
+    width: $key-size + 33px;
+  }
+
+  .shift {
+    width: $key-size + 62px;
+  }
+
+  .space {
+    width: $key-size + 623px;
+  }
+}
