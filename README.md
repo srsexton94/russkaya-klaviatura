@@ -10,20 +10,13 @@ Learning Russian? This app is designed to help russian learners practice their t
 
 ## User Stories
 As a user I want to...
-*  see the time interval words must be typed in displayed in the app window.
-* see the number of successful attempts and the number of total attempts in a score box.
+* see an russian keyboard interface where my keystrokes are reflected on the screen
+* see a representataion of successful, erred and total attempts in a score box
+* see a dynamic representation of my typing speed score as I practice
+* see prompt word(s) in a text box that represents my keystrokes as I type
 * click a 'Start Practice' button to start the practice session.
-* see the prompt word displayed in a text box.
-* begin typing the word in a text input box.
-* see the letters that have been typed flash if an incorrect letter is entered and the text input box will be cleared.
-* see the a message adjacent to the text input box indicating the user should try again if an incorrect letter is entered.
-* see the number of total attempts incremented in the score box.
-* see a congratulations message if the word is correctly typed.
-* see the time interval words must be typed decremented by a small amount if the word is correctly typed.
-* see the number of successful attempts incremented in the score box if the word was correctly typed.
-* click a 'Stop Practice' button to stop the practice session.
+* be able to stop the practice session (by button click or time out)
 
 ## Stretch Goals
-*  User can hear a unique audible tone signalling when a new word is displayed, a word is correctly entered, or an incorrect letter is typed in the word.
-* User can login to the app
+* add audible tone when new word is displayed, correctly entered, or an error was made
 * User can see cumulative performance statistics across all of his/her practice sessions.
