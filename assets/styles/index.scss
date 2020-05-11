@@ -42,7 +42,7 @@ main {
     border-radius: 5px;
     float: left;
     height: $key-size;
-    line-height: 40px;
+    line-height: $key-size;
     margin: 0 5px 5px 0;
     text-align: center;
     width: $key-size;
