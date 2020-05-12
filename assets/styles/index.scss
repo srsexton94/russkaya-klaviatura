@@ -27,7 +27,7 @@ h2 {
 }
 
 main {
-  margin: 100px auto;
+  margin: 50px auto;
   width: 688px;
 }
 
@@ -37,18 +37,6 @@ main {
 
 .hidden {
   display: none;
-}
-
-.screen {
-  background: $main-bg;
-  border: 1px solid $soft-border;
-  border-radius: 5px;
-  font: 1em/1.5 Verdana, Sans-Serif;
-  height: 200px;
-  margin: 0 0 5px;
-  padding: 5px;
-  pointer-events: none;
-  width: 671px;
 }
 
 .keyboard {
@@ -84,4 +72,29 @@ main {
   .space {
     width: $key-size + 620px;
   }
+}
+
+.options {
+  bottom: 0px;
+  left: 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+
+  button {
+    font-size: 1em !important;
+    margin-bottom: 10px;
+  }
+}
+
+.screen {
+  background: $main-bg;
+  border: 1px solid $soft-border;
+  border-radius: 5px;
+  font: 1em/1.5 Verdana, Sans-Serif;
+  height: 200px;
+  margin: 0 0 5px;
+  padding: 5px;
+  pointer-events: none;
+  width: 671px;
 }
