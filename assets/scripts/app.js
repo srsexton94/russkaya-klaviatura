@@ -3,6 +3,6 @@
 const keyboard = require('./keyboard')
 
 $(() => {
-  keyboard.loadUnshift()
+  $('.upper').addClass('hidden')
   keyboard.addHandlers()
 })

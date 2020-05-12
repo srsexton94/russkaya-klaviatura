@@ -1,30 +1,18 @@
 'use strict'
 
-const keyboardTemplate = require('./templates/keyboard.handlebars')
-const keys = require('./keys')
-
-const loadShift = () => {
-  const keyboardHtml = keyboardTemplate({ keys: keys.shifted })
-  $('#container').html(keyboardHtml)
-}
-
-const loadUnshift = () => {
-  const keyboardHtml = keyboardTemplate({ keys: keys.unshifted })
-  $('#container').html(keyboardHtml)
-}
-
 const onKeydown = event => {
-  const key = event.code
-  // const item = $('#container').find(`#${key}`)
-  // item.addClass('clicked')
-  // console.log(item)
-  const element = document.getElementById('container').querySelector('#' + key)
-  console.log(element.classList)
+  const keyId = `#${event.code}`
+  const newTxt = $(keyId + ' span').text().charAt(0)
+  const screenTxt = $('#screen').text()
+  $('#screen').text(screenTxt + newTxt)
+  console.log(screenTxt)
+  console.log(newTxt)
+  $(keyId).addClass('clicked')
 }
 
 const onKeyup = event => {
   const key = event.code
-  $('#container').find(`#${key}`).removeClass('clicked')
+  $(`#${key}`).removeClass('clicked')
 }
 
 const addHandlers = () => {
@@ -33,7 +21,5 @@ const addHandlers = () => {
 }
 
 module.exports = {
-  loadUnshift,
-  loadShift,
   addHandlers
 }

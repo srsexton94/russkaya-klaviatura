@@ -1,9 +1,9 @@
 @import '~bootstrap/scss/bootstrap';
 
-$page-bg: #eee;
+$page-bg: #bbb;
 $main-bg: #fff;
 $soft-border: #f9f9f9;
-$shade: #e5e5e5;
+$shade: #b2b2b2;
 $key-size: 40px;
 
 * {
@@ -16,9 +16,27 @@ body {
   font: 75% / 1.5 sans-serif;
 }
 
+h1 {
+  margin-top: 5vh;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
 main {
   margin: 100px auto;
   width: 688px;
+}
+
+.clicked {
+  box-shadow: inset 2px 2px 8px 2px $shade;
+}
+
+.hidden {
+  display: none;
 }
 
 .screen {
@@ -63,10 +81,6 @@ main {
   }
 
   .space {
-    width: $key-size + 623px;
+    width: $key-size + 620px;
   }
-}
-
-.clicked {
-  background-color: blue;
 }
