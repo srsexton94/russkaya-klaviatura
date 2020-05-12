@@ -1,10 +1,12 @@
 @import '~bootstrap/scss/bootstrap';
 
-$page-bg: #1d8678;
+$page-bg: #ccc;
 $main-bg: #fff;
 $soft-border: #f9f9f9;
 $shade: #b2b2b2;
 $key-size: 40px;
+$highlight: #d31717;
+$lowlight: #153b66;
 
 * {
   margin: 0;
@@ -13,17 +15,24 @@ $key-size: 40px;
 
 body {
   background: $page-bg;
-  font: 75% / 1.5 sans-serif;
+  font: 90% / 1.5 sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 h1 {
+  color: $lowlight;
+  font-size: 4em;
+  font-weight: 800;
   margin-top: 5vh;
   text-align: center;
+  text-shadow: 1px 1px $highlight;
 }
 
 h2 {
+  color: darken($highlight, 10%);
+  font-family: monospace;
+  font-size: 1.25em;
   text-align: center;
-  font-size: 1.5em;
 }
 
 main {
@@ -75,12 +84,10 @@ main {
 }
 
 .options {
-  bottom: 0px;
-  left: 0;
-  position: fixed;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
   text-align: center;
-  width: 100%;
-
   button {
     font-size: 1em !important;
     margin-bottom: 10px;
