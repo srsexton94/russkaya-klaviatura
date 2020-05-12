@@ -37,7 +37,7 @@ main {
   padding-left: 5px;
 
   li {
-    background: $main-bg;
+    background-color: $main-bg;
     border: 1px solid $soft-border;
     border-radius: 5px;
     float: left;
@@ -46,12 +46,6 @@ main {
     margin: 0 5px 5px 0;
     text-align: center;
     width: $key-size;
-
-    :hover {
-      border-color: $shade;
-      cursor: pointer;
-      position: relative;
-    }
   }
 
   .capslock,
@@ -71,4 +65,8 @@ main {
   .space {
     width: $key-size + 623px;
   }
+}
+
+.clicked {
+  background-color: blue;
 }
