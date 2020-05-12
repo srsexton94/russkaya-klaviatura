@@ -10,7 +10,7 @@ const text = [
 ]
 
 const edits = [
-  'Backspace', 'Tab', 'CapsLock', 'Enter', 'ShiftLeft', 'ShiftRight', 'Space'
+  'Backspace', 'Tab', 'Enter', 'ShiftLeft', 'ShiftRight', 'Space'
 ]
 
 module.exports = {
