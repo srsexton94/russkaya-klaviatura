@@ -1,6 +1,6 @@
 'use strict'
 
-const textKeys = [
+const text = [
   'Backquote', 'Digit1', 'Digit2', 'Digit3', 'Digit4', 'Digit5', 'Digit6', 'Digit7',
   'Digit8', 'Digit9', 'Digit0', 'Minus', 'Equal', 'KeyQ', 'KeyW', 'KeyE', 'KeyR',
   'KeyT', 'KeyY', 'KeyU', 'KeyI', 'KeyO', 'KeyP', 'BracketLeft', 'BracketRight',
@@ -9,11 +9,11 @@ const textKeys = [
   'KeyM', 'Comma', 'Period', 'Slash'
 ]
 
-const editKeys = [
+const edits = [
   'Backspace', 'Tab', 'CapsLock', 'Enter', 'ShiftLeft', 'ShiftRight', 'Space'
 ]
 
 module.exports = {
-  editKeys,
-  textKeys
+  edits,
+  text
 }
